@@ -12,22 +12,7 @@
  * Do not edit the class manually.
  */
 
-/**
- * 
- * @export
- * @interface TokentrackerGetTokenBalanceResponse
- */
-export interface TokentrackerGetTokenBalanceResponse {
-    /**
-     * 
-     * @type {string}
-     * @memberof TokentrackerGetTokenBalanceResponse
-     */
-    'balance'?: string;
-    /**
-     * 
-     * @type {Date}
-     * @memberof TokentrackerGetTokenBalanceResponse
-     */
-    'updatedAt'?: Date;
-}
+
+export * from "./api";
+export * from "./configuration";
+
