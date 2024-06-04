@@ -8,24 +8,32 @@
     "url": "https://github.com/Gemini-Commerce/typescript-client-tokentracker.git"
   },
   "keywords": [
-    "axios",
+    "fetch",
     "typescript",
     "openapi-client",
-    "openapi-generator",
-    "@gemini-commerce/typescript-client-tokentracker"
+    "openapi-generator"
   ],
   "license": "Unlicense",
   "main": "./dist/index.js",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.js"
+    }
+  },
   "typings": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build"
   },
   "dependencies": {
-    "axios": "^1.6.1"
+    "whatwg-fetch": "^3.0.0",
+    "es6-promise": "^4.2.4",
+    "url-parse": "^1.4.3"
   },
   "devDependencies": {
-    "@types/node": "^12.11.5",
-    "typescript": "^4.0"
+    "typescript": "^4.0",
+    "@types/url-parse": "1.4.4"
   }
 }
